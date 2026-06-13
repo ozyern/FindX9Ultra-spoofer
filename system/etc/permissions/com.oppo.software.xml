@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generic OPPO / ColorOS feature declarations for apps that inspect PackageManager features. -->
+<permissions>
+    <feature name="com.oppo.software.coloros" />
+    <feature name="com.oplus.software.coloros" />
+</permissions>

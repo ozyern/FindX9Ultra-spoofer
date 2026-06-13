@@ -1,0 +1,129 @@
+# ============================================================
+# OPPO Find X9 Ultra (CPH2841) Device Spoof
+# Android 16 | Magisk / KernelSU / SukiSU compatible
+# v1.0 - global CPH2841 identity + flagship performance props
+# ============================================================
+
+# --- Core product ---
+ro.product.brand=OPPO
+ro.product.manufacturer=OPPO
+ro.product.name=CPH2841
+ro.product.device=CPH2841
+ro.product.model=CPH2841
+ro.product.marketname=OPPO Find X9 Ultra
+
+# --- System partition ---
+ro.product.system.brand=OPPO
+ro.product.system.manufacturer=OPPO
+ro.product.system.name=CPH2841
+ro.product.system.device=CPH2841
+ro.product.system.model=CPH2841
+
+# --- Vendor partition ---
+ro.product.vendor.brand=OPPO
+ro.product.vendor.manufacturer=OPPO
+ro.product.vendor.name=CPH2841
+ro.product.vendor.device=CPH2841
+ro.product.vendor.model=CPH2841
+
+# --- ODM partition ---
+ro.product.odm.brand=OPPO
+ro.product.odm.manufacturer=OPPO
+ro.product.odm.name=CPH2841
+ro.product.odm.device=CPH2841
+ro.product.odm.model=CPH2841
+
+# --- Product partition ---
+ro.product.product.brand=OPPO
+ro.product.product.manufacturer=OPPO
+ro.product.product.name=CPH2841
+ro.product.product.device=CPH2841
+ro.product.product.model=CPH2841
+
+# --- Attestation-facing props ---
+ro.product.brand_for_attestation=OPPO
+ro.product.device_for_attestation=CPH2841
+ro.product.manufacturer_for_attestation=OPPO
+ro.product.model_for_attestation=CPH2841
+ro.product.name_for_attestation=CPH2841
+
+# --- Build ---
+ro.build.product=CPH2841
+ro.build.brand=OPPO
+ro.build.manufacturer=OPPO
+ro.build.tags=release-keys
+ro.build.type=user
+
+# --- Android 16 ---
+ro.build.version.release=16
+ro.build.version.sdk=36
+# Security patch intentionally NOT overridden; it stays at the host system default.
+
+# --- Fingerprints ---
+# Replace this with a dumped stock CPH2841 fingerprint when official firmware is available.
+ro.build.fingerprint=OPPO/CPH2841/CPH2841:16/AP4A.250605.001/T.250610:user/release-keys
+ro.system.build.fingerprint=OPPO/CPH2841/CPH2841:16/AP4A.250605.001/T.250610:user/release-keys
+ro.vendor.build.fingerprint=OPPO/CPH2841/CPH2841:16/AP4A.250605.001/T.250610:user/release-keys
+ro.product.build.fingerprint=OPPO/CPH2841/CPH2841:16/AP4A.250605.001/T.250610:user/release-keys
+ro.odm.build.fingerprint=OPPO/CPH2841/CPH2841:16/AP4A.250605.001/T.250610:user/release-keys
+ro.system_ext.build.fingerprint=OPPO/CPH2841/CPH2841:16/AP4A.250605.001/T.250610:user/release-keys
+
+# --- ColorOS / OPlus ---
+ro.vendor.oplus.version=CPH2841_16.0.0.250610
+ro.oplus.version=CPH2841_16.0.0.250610
+ro.oplus.regionmark=GLOBAL
+ro.product.characteristics=phone
+
+# ============================================================
+# Flagship Performance Tuning - Snapdragon 8 Elite Gen 5 class
+# ============================================================
+
+# --- RAM class: report 16 GB flagship tier ---
+ro.config.hw_ram_gb=16
+ro.product.mem_size_mb=16384
+ro.sf.total_ram_mb=16384
+
+# --- Dalvik/ART heap: flagship headroom ---
+dalvik.vm.heapsize=512m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapstartsize=16m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=8m
+dalvik.vm.heapmaxfree=32m
+
+# --- SoC identity: Snapdragon 8 Elite Gen 5 ---
+ro.soc.manufacturer=QTI
+ro.soc.model=SM8850-AC
+
+# --- Qualcomm/OPlus performance hints ---
+ro.vendor.qti.sys.fw.bservice_enable=true
+ro.vendor.qti.sys.fw.bservice_limit=5
+ro.vendor.qti.sys.fw.bservice_age=5000
+persist.vendor.qti.inputopts.enable_motionpred=true
+persist.vendor.qti.inputopts.movedist=2
+persist.sys.oplus.perf_mode=1
+ro.vendor.oplus.game.flowchecker.enable=1
+ro.vendor.oplus.hypercooling=1
+
+# --- Background process allowance ---
+ro.config.max_starting_bg=8
+ro.sys.fw.bg_apps_limit=60
+
+# --- SurfaceFlinger / frame pipeline ---
+debug.sf.disable_backpressure=1
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.has_HDR_display=true
+
+# --- Touch and input latency ---
+ro.input.noresample=1
+debug.input.resampling=0
+
+# --- Quick power on and UI I/O hint ---
+ro.config.hw_quickpoweron=true
+sys.use_fifo_ui=1
+
+# --- ZRAM / memory compression: 16 GB-class behavior ---
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24

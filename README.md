@@ -45,4 +45,7 @@ getprop ro.product.model
 getprop ro.product.marketname
 getprop ro.soc.model
 ```
+## Credits
 
+- Sabrina AnnLynn Carpenter
+- Find X9 Ultra adaptation: CPH2841 target build
