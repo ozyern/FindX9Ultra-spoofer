@@ -1,4 +1,4 @@
-# OPPO Find X9 Ultra Spoof
+# OPPO Find X9 Ultra Spoofer
 
 Magisk / KernelSU / SukiSU module that spoofs device identity as the global OPPO Find X9 Ultra (`CPH2841`) and applies conservative flagship-class runtime props.
 
